@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin-top: 2rem;
 }
 
 h1 {
@@ -8,4 +9,46 @@ h1 {
 
 p {
     color: #afb6c2;
+}
+
+a {
+    color: aliceblue;
+}
+
+.logInImg{
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+.logInH1{
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.logInp{
+    margin-top: 0%;
+}
+
+#email {
+    margin-bottom: 0%;
+}
+
+#Senha {
+    margin-bottom: 0%;
+}
+
+.checkbox {
+    margin-top: 1rem;
+    color: #afb6c2;
+}
+
+#accountP {
+    display: inline-block;
+}
+
+#accountHref {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+
 }

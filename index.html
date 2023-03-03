@@ -11,25 +11,28 @@
     <img src="./images/logo.svg" alt="logocampin">
   </header>
   <body>
+    <section class="logIn">
+      <img class="logInImg" src="./images/log-in.svg" alt="login">
+      <h1 class="logInH1">Login</h1>
+      <p class="logInp">Insert your information below.</p>
+    </section>
+    <main>
     <div>
-    <img src="./images/log-in.svg" alt="login">
-    <h1>Login</h1>
-    <p>Insert your information below.</p>
+    <p id="email">E-mail</p>
+    <input class="text" type="text" placeholder="Type your email" />
+    <p id="Senha">Senha</p>
+    <input class="password" type="password" placeholder="Type your password" />
     </div>
-    <div>
-    <p>E-mail</p>
-    <input type="text" placeholder="Type your email" />
-    <p>Senha</p>
-    <input type="password" placeholder="Type your password" />
-    </div>
-    <div>
-    <input type="checkbox" name="Remind me" />
+    <div class="checkbox">
+    <input type="checkbox" name="Remindme"/>
+    <lable for="Remindme">Remind me</lable>
     <button>Forgot my password</button>
-    </div>
     <button>LOG IN</button>
-    <div>
-    <p>Don't have an account?</p>
-    <button>Sign up!</button>
     </div>
+    <div>
+    <p id="accountP">Don't have an account?</p>
+    <a id="accountHref" href="www.google.com.tw">Sing up!</a>
+    </div>
+    </main>
   </body>
 </html>

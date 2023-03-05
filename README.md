@@ -32,7 +32,7 @@ In this challenge, you will be creating a login form.
   --text-title: #d4ccb6;
   --background: #191816;
   --form-background: #24221f;
-  --primary-color: #ffc632;
+  --primary-color: #ffc632; // 黃色 //
 }
 ```
 

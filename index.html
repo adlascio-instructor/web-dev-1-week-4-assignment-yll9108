@@ -11,28 +11,53 @@
     <img src="./images/logo.svg" alt="logocampin">
   </header>
   <body>
+    <section class="bodyContent">
     <section class="logIn">
       <img class="logInImg" src="./images/log-in.svg" alt="login">
       <h1 class="logInH1">Login</h1>
       <p class="logInp">Insert your information below.</p>
     </section>
     <main>
-    <div>
-    <p id="email">E-mail</p>
-    <input class="text" type="text" placeholder="Type your email" />
-    <p id="Senha">Senha</p>
-    <input class="password" type="password" placeholder="Type your password" />
+    <div class="form">
+    <form>
+    <label>E-mail</label>
+    </br>
+    <input onclick="changeText();" type="text" id="email" placeholder="       Type your email" />
+    <script>
+      function changeText(){
+      const formText = document.querySelector("#email")
+      formText.style.borderColor= "red";
+      // formText.style.backgroundImage=url./
+      }
+    </script>
+    <label>Password</label>
+    <input onclick="changeMail();" type="password" id="password" placeholder="       Type your password" />
+    <script>
+      function changeMail(){
+      const formText = document.querySelector("#password")
+      formText.style.borderColor="red";
+      // formText.style.backgroundImage=url./
+      }
+    </script>  
+    </form>
     </div>
     <div class="checkbox">
     <input type="checkbox" name="Remindme"/>
     <lable for="Remindme">Remind me</lable>
     <button>Forgot my password</button>
-    <button>LOG IN</button>
+    </div>
+    <div>
+    <button id="logInbbtn">LOG IN</button>
     </div>
     <div>
     <p id="accountP">Don't have an account?</p>
     <a id="accountHref" href="www.google.com.tw">Sing up!</a>
     </div>
+    </section>
+    <section >
+      <img src="./images/side-image.jpg" class="desktopBg">
+    </section>
+    </section>
     </main>
   </body>
 </html>

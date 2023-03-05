@@ -15,6 +15,10 @@ a {
     color: aliceblue;
 }
 
+.bodyContent {
+    display: grid;
+}
+
 .logInImg{
     display: inline-block;
     vertical-align: text-bottom;
@@ -28,12 +32,37 @@ a {
     margin-top: 0%;
 }
 
-#email {
-    margin-bottom: 0%;
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 200px;
+    color: #d4ccb6;
 }
 
-#Senha {
-    margin-bottom: 0%;
+
+label {
+    margin-top: 10px;
+}
+
+
+input{
+    border-radius: 5px;
+    height: 20px;
+    border-color: #d4ccb6;
+    background-color: black;
+}
+
+
+#email {
+    width: 200px;
+    margin: auto;
+    background: url(./images/mail.svg) left top no-repeat;
+}
+
+#password {
+    width: 200px;
+    background: url(./images/lock.svg) left top no-repeat, url(./images/eye.svg) right top no-repeat;
 }
 
 .checkbox {
@@ -49,6 +78,14 @@ a {
     display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
+#logInbbtn {
+    background-color: #ffc632;
+    border-radius: 5px;
+    width: 250px;
+}
 
+@media only screen and (min-width: 600px) {
+    .desktopBg {
+        display: none;
+    }
 }
